@@ -2,7 +2,7 @@
 // Write your code here
 import './index.css'
 
-const AppointmentIem = props => {
+const AppointmentItem = props => {
   const {appointmentDetails, toggleIsStarred} = props
   const {id, title, date, isStarred} = appointmentDetails
   const starImgUrl = isStarred
@@ -19,7 +19,7 @@ const AppointmentIem = props => {
         <p className="title">{title}</p>
         <button
           type="button"
-          testid="star"
+          data-testid="star"
           className="star-button"
           onClick={onClickStar}
         >
@@ -31,4 +31,4 @@ const AppointmentIem = props => {
   )
 }
 
-export default AppointmentIem
+export default AppointmentItem
